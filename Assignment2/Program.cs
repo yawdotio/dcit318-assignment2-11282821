@@ -32,6 +32,15 @@ public class Program
         Console.WriteLine($"Area of Circle: {circle.GetArea()}"); // Output: Area of Circle: 78.53981633974483
         Console.WriteLine($"Area of Rectangle: {rectangle.GetArea()}"); // Output: Area of Rectangle: 24.0
 
+        // Task 3: Demonstrate interfaces using IMovable, Car, and Bicycle
+        Console.WriteLine("Movable Objects:");
+        Console.WriteLine("-----------------");
+        IMovable car = new Car();
+        IMovable bicycle = new Bicycle();
+
+        car.Move();      // Output: Car is moving
+        bicycle.Move();  // Output: Bicycle is moving
+
 
     }
 }
